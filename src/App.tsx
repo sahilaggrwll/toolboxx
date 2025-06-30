@@ -136,10 +136,10 @@ function App() {
               </div>
             </div>
             <div className="hero-actions">
-              <a href="#tools" className="btn-primary">
+              <a href="#tools" className="btn-primary" onClick={(e) => { e.preventDefault(); handleNavClick(); scrollToSection('tools'); }}>
                 Explore Tools <ChevronRight size={20} />
               </a>
-              <a href="#features" className="btn-secondary">
+              <a href="#features" className="btn-secondary" onClick={(e) => { e.preventDefault(); handleNavClick(); scrollToSection('features'); }}>
                 Learn More
               </a>
             </div>
